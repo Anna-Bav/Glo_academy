@@ -54,7 +54,17 @@ logInForm.addEventListener('submit', (event) => {
     login(user);
 })
 
+
+
 if (localStorage.getItem("user")) {
     login(JSON.parse(localStorage.getItem("user")))
+   
+
+} else {
+    modalAuth.style.display = 'flex'
+    // const cardsMenu = document.querySelector('.cards-menu')
+    // cardsMenu.style.display = 'none'
+
+    // window.location.href = '/'
 }
 }
